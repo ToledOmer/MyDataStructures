@@ -1,21 +1,22 @@
+package com.company;
+
 import java.util.Iterator;
 
 /**
- * @author Omer Toledo - inspired by GeeksforGeeks
+ * @param <T>
+ * @author Omer Toledo - inspired byt GeeksforGeeks
+ * @
  */
 // Java implementation of Min Heap
 public class MinHeap<T extends Comparable<T>> implements Iterable<T> {
+
     private DynamicArray<T> Heap = new DynamicArray<T>();
     private int size;
-    private int maxsize;
     private static final int DEFAULT = 3;
     private static final int FRONT = 1;
 
     public MinHeap(int capacity) {
-//        this.maxsize = maxsize;
         this.size = 0;
-//        Heap = new int[this.maxsize + 1];
-//        Heap[0] = Integer.MIN_VALUE;
         Heap = new DynamicArray<T>(capacity);
     }
 
