@@ -76,8 +76,6 @@ public class DynamicArray<T> implements Iterable<T>{
         capacity = capacity * minCapacity;
     }
 
-    //this function search fo element, update it accoridng to lanbda and return the new updated T
-
 
     @Override
     public String toString() {
