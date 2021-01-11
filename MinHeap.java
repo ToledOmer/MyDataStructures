@@ -141,7 +141,6 @@ public class MinHeap<T extends Comparable<T>> implements Iterable<T> {
     public T remove() {
         T popped = Heap.getElement(FRONT);
         Heap.addElement(FRONT, Heap.getElement(size--));
-//        Heap[FRONT] = Heap[size--];
         minHeapify(FRONT);
         return popped;
     }
@@ -176,7 +175,6 @@ public class MinHeap<T extends Comparable<T>> implements Iterable<T> {
         return "MinHeap{" +
                 "Heap=" + Heap.toString() +
                 ", size=" + size +
-                ", maxsize=" + maxsize +
                 '}';
     }
 }
